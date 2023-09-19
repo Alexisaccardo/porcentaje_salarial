@@ -25,7 +25,7 @@ public class Porcentaje_salarial {
 
                     List<Funcionarios> funcionario = Select_One();
 
-                    if (funcionario.equals("")) {
+                    if (funcionario.isEmpty()) {
                         System.out.println("Este funcionario no se encuentra registrado");
                     } else {
                         for (int i = 0; i < funcionario.size(); i++) {
@@ -40,7 +40,7 @@ public class Porcentaje_salarial {
 
                     List<Funcionarios> funcionarios = Select_funcionary();
 
-                    if (funcionarios.equals("")) {
+                    if (funcionarios.isEmpty()) {
                         System.out.println("Este funcionario no se encuentra registrado");
                     } else {
                         for (int i = 0; i < funcionarios.size(); i++) {
