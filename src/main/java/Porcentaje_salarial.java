@@ -14,7 +14,7 @@ public class Porcentaje_salarial {
         while (aux) {
 
             System.out.println("1. Calcular rango salarial de 18 a 30 años: ");
-            System.out.println("2. Calcular rango salarial de 31 a 60: ");
+            System.out.println("2. Calcular rango salarial de 31 a 60 años: ");
             System.out.println("3. Terminar");
 
             System.out.println("Ingrese un numero entre 1 - 3: ");
@@ -26,7 +26,7 @@ public class Porcentaje_salarial {
                     List<Funcionarios> funcionario = Select_One();
 
                     if (funcionario.isEmpty()) {
-                        System.out.println("Este funcionario no se encuentra registrado");
+                        System.out.println("No se encuentran funcionarios con este rango de edad");
                     } else {
                         for (int i = 0; i < funcionario.size(); i++) {
                             double average = funcionario.get(i).getSalary() + (funcionario.get(i).getSalary() * 0.05);
@@ -41,7 +41,7 @@ public class Porcentaje_salarial {
                     List<Funcionarios> funcionarios = Select_funcionary();
 
                     if (funcionarios.isEmpty()) {
-                        System.out.println("Este funcionario no se encuentra registrado");
+                        System.out.println("No se encuentra un funcionario con este rango de edad");
                     } else {
                         for (int i = 0; i < funcionarios.size(); i++) {
                             double average = funcionarios.get(i).getSalary() + (funcionarios.get(i).getSalary() * 0.08);
